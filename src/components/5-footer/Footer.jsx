@@ -1,0 +1,13 @@
+import { useState } from 'react'
+import './footer.css'
+
+const Footer = () => {
+
+  return (
+    <>
+     footer
+    </>
+  )
+}
+
+export default Footer
