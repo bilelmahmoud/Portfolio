@@ -32,11 +32,33 @@ header button.menu{
     display: none;
 }
 
+/* iconButton */
+header .icon-menu, header button.mode{
+     background-color: var(--bgHeader);
+     height: 2.4rem;
+     width: 2.4rem;
+     border-radius: 50%;
+     justify-content: center;
+     text-align: center;
+     color: var(--subtitle);
+     border: 1px solid rgb(244, 165, 96, 0.249);
+     transition: 0.2s;
+     
+     
+}
+
+header .icon-menu:hover, header button.mode:hover{
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+
+}
+
 /* modal */
 header .fixed{
    position: fixed;
    inset: 0;
    background-color: rgb(40, 40, 48, 0.91);
+  
 
 
 }

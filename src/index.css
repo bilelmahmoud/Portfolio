@@ -52,6 +52,9 @@ a{
   transition: 0.2s;
 
 }
+a:hover{
+  cursor: pointer;
+}
 
 .flex{
   display: flex;
@@ -60,4 +63,15 @@ a{
 
 .border{
   border: 2px solid red
+}
+
+button {
+  all: unset;
+}
+button:hover {
+ cursor: pointer;
+}
+
+button:active{
+  scale: 0.9;
 }
