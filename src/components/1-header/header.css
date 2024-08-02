@@ -53,6 +53,17 @@ header .icon-menu:hover, header button.mode:hover{
 
 }
 
+header .icon-close{
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+header .icon-close:hover{
+    font-size: 1.7rem;
+    color: crimson;
+    rotate: 180deg ;
+}
+
 /* modal */
 header .fixed{
    position: fixed;
