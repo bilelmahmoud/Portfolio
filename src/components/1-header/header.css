@@ -1,3 +1,23 @@
+/*
+
+===============================
+table of contents
+===============================
+1.Header Design
+2.Button & icon
+3.Modal
+4.Responsive
+
+*/
+
+
+
+/*
+===============================
+1.Header Design
+===============================
+*/
+
 header.flex{
     justify-content: space-between;
     padding: 0 2.4rem;
@@ -32,7 +52,12 @@ header button.menu{
     display: none;
 }
 
-/* iconButton */
+/*
+===============================
+2.Button & icon
+===============================
+*/
+
 header .icon-menu, header button.mode{
      background-color: var(--bgHeader);
      height: 2.4rem;
@@ -64,7 +89,12 @@ header .icon-close:hover{
     rotate: 180deg ;
 }
 
-/* modal */
+/*
+===============================
+3.Modal
+===============================
+*/
+
 header .fixed{
    position: fixed;
    inset: 0;
@@ -120,6 +150,11 @@ header .fixed ul.modal li:first-child{
 }
 
 
+/*
+===============================
+4.responsive 
+===============================
+*/
 
 
 @media (max-width: 700px){
