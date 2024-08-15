@@ -5,7 +5,11 @@ html{
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1px;
 }
+
 html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
  
 *{
   margin: 0;
@@ -20,7 +24,8 @@ html {box-sizing: border-box;}
   --title: rgb(244 244 245);
   --subtitle: rgb(161 161 170);
   --bgHeader: rgb(39, 39, 42);
-  --blue: rgb(93, 188, 252)
+  --blue: rgb(93, 188, 252);
+  --icon-hover: #d4d4d8;
 }
 
 .light{
@@ -37,6 +42,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   background: var(--secondary);
+  padding: 0 4.8rem;
 }
 
 .divider{
@@ -74,4 +80,20 @@ button:hover {
 
 button:active{
   scale: 0.9;
+}
+
+@media (max-width: 600px) {
+  .container{
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .container{
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+
 }
