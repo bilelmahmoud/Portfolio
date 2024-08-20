@@ -1,0 +1,38 @@
+/*
+
+===============================
+table of contents
+===============================
+1.Left Section
+2.Right Section ==> Card
+
+
+*/
+
+main.flex{
+   gap: 3rem;
+}
+
+/*
+===============================
+1.Left Section ==> Buttons
+===============================
+*/
+
+main section.left-section.flex {
+   flex-direction: column;
+   gap: 10px;
+ }
+
+
+
+
+/*
+===============================
+2.Right Section ==> Card
+===============================
+*/
+
+main section.right-section {
+   flex-grow: 1;
+}

@@ -99,9 +99,9 @@ header .fixed{
    position: fixed;
    inset: 0;
    background-color: rgb(40, 40, 48, 0.91);
-  
-
-
+   border: 2px solid red;
+   backdrop-filter: blur(4px);
+ 
 }
 
 @keyframes mymove {
