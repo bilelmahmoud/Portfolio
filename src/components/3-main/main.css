@@ -10,7 +10,7 @@ table of contents
 */
 
 main.flex{
-   gap: 3rem;
+   gap: 2rem;
    align-items: start;
 }
 
@@ -113,6 +113,35 @@ opacity: 1;
 ===============================
 */
 
-main section.right-section {
-   /* flex-grow: 1; */
+
+
+main section.right-section.flex {
+   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: 16px;
+   row-gap: 2rem;
 }
+
+@media (max-width: 600px) {
+    main.flex{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+     }
+     main section.left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+     }
+
+     main section.left-section.flex button{
+        width: 7rem;
+        padding: 0.8rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+       
+    }
+  
+  }
+  
