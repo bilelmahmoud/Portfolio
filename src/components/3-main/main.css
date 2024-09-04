@@ -5,6 +5,7 @@ table of contents
 ===============================
 1.Left Section
 2.Right Section ==> Card
+3.responsive 
 
 
 */
@@ -121,6 +122,12 @@ main section.right-section.flex {
    column-gap: 16px;
    row-gap: 2rem;
 }
+
+/*
+===============================
+3.responsive 
+===============================
+*/
 
 @media (max-width: 600px) {
     main.flex{

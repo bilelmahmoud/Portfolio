@@ -5,7 +5,7 @@ const Main = () => {
 
   return (
     <main className='flex'>
-          <section className=' border  left-section flex'>
+          <section className='  left-section flex'>
                   <button className='active'>All Projects</button>
                   <button>HTML & CSS </button>
                   <button>JavaScript</button>
@@ -13,7 +13,7 @@ const Main = () => {
                   <button>PHP</button>
           </section>
 
-          <section className='border flex right-section'>
+          <section className=' flex right-section'>
 
 
           {["aa", "bb", "cc", 1 , 7].map((item) => {
