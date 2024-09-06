@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className='container'>
+    <div id='up' className='container'>
 
       <Header />
     
@@ -20,6 +20,10 @@ function App() {
       <Contact />
       <div className='divider' />
       <Footer />
+
+      <a href='#up'>
+       <button className=' icon-chevron-up scroll2Top '></button>
+      </a>
 
     </div>
   )
