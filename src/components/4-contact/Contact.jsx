@@ -12,17 +12,17 @@ const Contact = () => {
     <p className='sub-title'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus officiis rem doloremque voluptate 
     </p>
     <div className="flex">
-      <form className='border'>
-        <div>
-          <label htmlFor="email">Adresse Courriel</label>
-          <input type="email" name='' id='email'/>
+      <form >
+        <div className='flex'>
+          <label htmlFor="email">Email adresse:</label>
+          <input required type="email" name='' id='email'/>
         </div>
         <div className='flex' style={{marginTop : "24px"}}>
-          <label htmlFor="message">votre message</label>
-          <textarea name="" id="message"></textarea>
+          <label htmlFor="message">Your message:</label>
+          <textarea required name="" id="message"></textarea>
         </div>
 
-        <button>Envoyer</button>
+        <button className='submit'>Envoyer</button>
 
       </form>
       <div className=" border animation">
