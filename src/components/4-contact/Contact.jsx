@@ -22,7 +22,7 @@ const Contact = () => {
           <textarea required name="" id="message"></textarea>
         </div>
 
-        <button className='submit'>Envoyer</button>
+        <button className='submit'>Submit</button>
 
       </form>
       <div className=" border animation">
