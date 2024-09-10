@@ -1,28 +1,68 @@
 import { useState } from 'react'
 import './main.css'
 
+
+const myProjects = [
+  {projectTitle : "react project" , category: "react" , imgpath:"a"},
+  {projectTitle : "css project" , category: "css" , imgpath:"b"},
+]
+
 const Main = () => {
+
+  const [currentActive, setaCurrentActive] = useState("all");
+  const [arr, setArr] = useState(myProjects);
 
   return (
     <main className='flex'>
           <section className='  left-section flex'>
-                  <button className='active'>All Projects</button>
-                  <button>HTML & CSS </button>
+                  <button onClick={() => {
+                    setaCurrentActive("all")
+
+                  }} className={currentActive === "all" ? "active" : null}>All Projects</button>
+
+                  <button
+                      onClick={() => {
+                        
+                        setaCurrentActive("css")
+                      const newArr =  myProjects.filter((item) => {
+                        return item.category ==="css"
+                      })
+                  
+                        setArr(newArr )
+
+                    }} className={currentActive === "css"? "active" : null}>
+                      HTML & CSS 
+                  </button>
+
+                  <button
+                      onClick={() => {
+                        
+                        setaCurrentActive("react")
+                      const newArr =  myProjects.filter((item) => {
+                        return item.category ==="react"
+                      })
+                  
+                        setArr(newArr )
+
+                    }} className={currentActive === "react"? "active" : null}>
+                      React
+                  </button>
+
+
                   <button>JavaScript</button>
-                  <button>React</button>
                   <button>PHP</button>
           </section>
 
           <section className=' flex right-section'>
 
 
-          {["aa", "bb", "cc", 1 , 7].map((item) => {
+          {arr.map((item) => {
 
             return(
-              <article key={item}  className='card'>
-                    <img width={266} src="./htmlcssjs-details.png" alt="" />
+              <article key={item.imgpath}  className='card'>
+                    <img width={266} src={item.imgpath} alt="" />
                     <div style={{width:"266px"}} className="box">
-                          <h1 className="title">landing page 2</h1>
+                          <h1 className="title">{item.projectTitle}</h1>
                           <p className="sub-title">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sed! Quidem, fugit quia maxime natus illum soluta quo voluptatibus laudantium consequuntur sapiente voluptates atque amet pariatur repudiandae quaerat, quod ipsa!
                           </p>
