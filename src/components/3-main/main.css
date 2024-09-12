@@ -47,11 +47,18 @@ border: 1px solid var(--blue);
 border-radius: 5px;
 
 }
+
+.light main section.left-section.flex button.active{
+
+    border: 1px solid #333;
+
+}
 main section.left-section.flex button:hover{
 opacity: 1;
 }
 
 .card{
+box-shadow: -1px 1px 1px rgba(0, 0, 0,  0.16) , 1px 1px 1px rgba(0, 0, 0,  0.15);;
  border: 1px solid rgba(93, 188, 252, 0.3);
  border-radius: 5px;
  transition: 0.3s;
@@ -61,11 +68,17 @@ opacity: 1;
     rgb(255, 255, 255, 0.05)
     );
 }
+
+.light .card, .light .card:hover{
+   border: none; 
+}
+
 .card:hover{
     border: 1px solid var(--blue);
     rotate: 1deg;
     scale: 1.01;
     cursor: pointer;
+    background-color: rgba(246, 246, 246 ) ;
 
  }
 
@@ -79,6 +92,7 @@ opacity: 1;
 
 .card .box .title{
     color: var(--title);
+    text-transform: capitalize;
 }
 .card .box .sub-title{
     color: var(--subtitle);
@@ -117,6 +131,7 @@ opacity: 1;
 
 
 main section.right-section.flex {
+   flex-grow: 1;
    justify-content: center;
    flex-wrap: wrap;
    column-gap: 16px;

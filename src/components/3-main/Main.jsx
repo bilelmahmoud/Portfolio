@@ -1,56 +1,82 @@
 import { useState } from 'react'
 import './main.css'
+import { myProjects } from './MyProjects';
 
 
-const myProjects = [
-  {projectTitle : "react project" , category: "react" , imgpath:"a"},
-  {projectTitle : "css project" , category: "css" , imgpath:"b"},
-]
 
 const Main = () => {
 
   const [currentActive, setaCurrentActive] = useState("all");
   const [arr, setArr] = useState(myProjects);
 
+  const handleClick = (buttonCategory) => {
+
+    setaCurrentActive(buttonCategory)
+    const newArr =  myProjects.filter((item) => {
+
+        const arr = item.category.find((myItem) => {
+
+          return myItem === buttonCategory
+
+        })
+
+          return arr === buttonCategory
+    })
+
+      setArr(newArr )
+
+  }
+
   return (
     <main className='flex'>
           <section className='  left-section flex'>
                   <button onClick={() => {
                     setaCurrentActive("all")
+                    setArr(myProjects)
 
                   }} className={currentActive === "all" ? "active" : null}>All Projects</button>
 
                   <button
                       onClick={() => {
                         
-                        setaCurrentActive("css")
-                      const newArr =  myProjects.filter((item) => {
-                        return item.category ==="css"
-                      })
-                  
-                        setArr(newArr )
+                      handleClick("css")
 
-                    }} className={currentActive === "css"? "active" : null}>
-                      HTML & CSS 
+                    }} 
+                    className={currentActive === "css" ? "active" : null}>
+                    HTML & CSS 
                   </button>
 
                   <button
                       onClick={() => {
                         
-                        setaCurrentActive("react")
-                      const newArr =  myProjects.filter((item) => {
-                        return item.category ==="react"
-                      })
-                  
-                        setArr(newArr )
+                      handleClick("react")
 
-                    }} className={currentActive === "react"? "active" : null}>
-                      React
+                    }} 
+                    className={currentActive === "react"? "active" : null}>
+                    react
                   </button>
+                  <button
+                      onClick={() => {
+                        
+                      handleClick("javaScipt")
 
+                    }} 
+                    className={currentActive === "javaScipt"? "active" : null}>
+                    javaScipt
+                  </button>
+                  <button
+                      onClick={() => {
+                        
+                      handleClick("php")
 
-                  <button>JavaScript</button>
-                  <button>PHP</button>
+                    }} 
+                    className={currentActive === "php"? "active" : null}>
+                    php
+                  </button>
+                 
+
+                  
+               
           </section>
 
           <section className=' flex right-section'>
