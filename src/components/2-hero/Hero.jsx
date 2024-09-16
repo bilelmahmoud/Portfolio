@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import Lottie from "lottie-react";
+import  developer from "../../../public/animation/developer.json";
 import './hero.css'
 
 const Hero = () => {
-
+   const lottieRef = useRef();
   return (
    
       <section className='hero flex'>
@@ -21,8 +23,17 @@ const Hero = () => {
          </div>
 
 
-         <div className='right-section annimation border'>
-            annimation
+         <div className='right-section animation '>
+         <Lottie 
+         lottieRef={lottieRef} 
+         className=''  
+         onLoadedImages={() => {
+            // @ts-ignore
+            // https://lottiereact.com/
+            lottieRef.current.setSpeed(0.5);
+
+         }}
+         animationData={developer} />
          </div>
       </section>
    

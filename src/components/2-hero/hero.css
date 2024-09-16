@@ -85,3 +85,13 @@ section.hero .icons .icon:hover{
 2.Right section // animation
 ===============================
 */
+.animation {
+ width: 100%;
+ translate: 100px 55px;
+}
+
+@media (max-width: 1250px) {
+    section.hero .animation{
+    display: none;
+    }
+}
