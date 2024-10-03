@@ -14,7 +14,7 @@ const Contact = () => {
       <span className='icon-envelope'></span>
       contact us
     </h1>
-    <p className='sub-title'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus officiis rem doloremque voluptate 
+    <p className='sub-title'>Contact us for more information and get notified when I publish something new
     </p>
     <div style={{justifyContent : "space-between"}} className="flex">
       <form  onSubmit={handleSubmit}>

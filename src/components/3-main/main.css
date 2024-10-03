@@ -78,7 +78,7 @@ box-shadow: -1px 1px 1px rgba(0, 0, 0,  0.16) , 1px 1px 1px rgba(0, 0, 0,  0.15)
     rotate: 1deg;
     scale: 1.01;
     cursor: pointer;
-    background-color: rgba(246, 246, 246 ) ;
+   
 
  }
 
@@ -96,7 +96,7 @@ box-shadow: -1px 1px 1px rgba(0, 0, 0,  0.16) , 1px 1px 1px rgba(0, 0, 0,  0.15)
 }
 .card .box .sub-title{
     color: var(--subtitle);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 0.7rem;
     margin-bottom:1.1rem;
 }
